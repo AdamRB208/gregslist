@@ -1,6 +1,6 @@
 
 
-export class Houses {
+export class House {
 
   constructor(data) {
     this.id = data.id
@@ -13,7 +13,7 @@ export class Houses {
     this.imgUrl = data.imgUrl
   }
 
-  get housesCardHTMLTenplate() {
+  get housesCardHTMLTemplate() {
     return `
     <div class="col-12">
       <div class="shadow bg-light d-flex mb-4">
