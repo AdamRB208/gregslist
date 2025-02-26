@@ -62,7 +62,7 @@ class ObservableAppState extends EventEmitter {
     }),
 
     new House({
-      year: '1974', bedrooms: 3, bathrooms: 2.5, sqft: 1400, price: 375000, description: 'Newly renovated mid-century modern home', imgUrl: 'https://media.istockphoto.com/id/1248641162/photo/exterior-view-of-a-mid-century-modern-house.webp?a=1&b=1&s=612x612&w=0&k=20&c=KdHJtg2mfqHgnI-lXxVPhqFA9a-C9S-Phaeryr14_qg='
+      year: '2020', bedrooms: 4, bathrooms: 3, sqft: 2000, price: 550000, description: 'Modern Town Home', imgUrl: 'https://images.unsplash.com/photo-1619216083420-6e54b895f730?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdXNlc3xlbnwwfHwwfHx8MA%3D%3D'
     }),
 
   ]
