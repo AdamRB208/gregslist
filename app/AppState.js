@@ -65,6 +65,10 @@ class ObservableAppState extends EventEmitter {
       year: '2020', bedrooms: 4, bathrooms: 3, sqft: 2000, price: 550000, description: 'Modern Town Home', imgUrl: 'https://images.unsplash.com/photo-1619216083420-6e54b895f730?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdXNlc3xlbnwwfHwwfHx8MA%3D%3D'
     }),
 
+    new House({
+      year: '1920', bedrooms: 5, bathrooms: 4, sqft: 2200, price: 750000, description: 'Early 20th Century Victorian', imgUrl: 'https://images.unsplash.com/photo-1492889971304-ac16ab4a4a5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmljdG9yaWFuJTIwaG91c2V8ZW58MHx8MHx8fDA%3D'
+    }),
+
   ]
 
 }

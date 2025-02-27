@@ -21,7 +21,15 @@ export class HousesController {
 
     houseListingElem.innerHTML = housesCardsContent
 
-
   }
 
+  createHouseListing() {
+    event.preventDefault()
+    let form = event.target
+    let houseData = {
+
+    }
+  }
 }
+
+// createHouseListing() goes here

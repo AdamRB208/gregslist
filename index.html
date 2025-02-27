@@ -133,6 +133,65 @@
     </section>
     <h2 class="fs-1 p-5">Houses</h2>
     <section class="container">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h3>List Your Home</h3>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow bg-light px-5 py-2">
+            <form onsubmit="app.housesController.createHouseListing()">
+              <div class="mb-3">
+                <label for="buildYear">year home was built</label>
+                <input id="buildYear" name="year" type="number" required min="1800" max="2025" placeholder="0"
+                  placeholder="Year of construction...">
+              </div>
+              <div class="mb-3">
+                <label for="bedroomNumber">Number of Bedrooms</label>
+                <input id="bedroomNumber" name="bedroom" type="number" required min="1" max="20" placeholder="0"
+                  placeholder="Number of bedrooms...">
+              </div>
+              <div class="mb-3">
+                <label for="bathroomNumber">Number of Bathrooms</label>
+                <input id="bathroomNumber" name="bathroom" type="number" required min="1" max="20" placeholder="0">
+              </div>
+              <div class="mb-3">
+                <label for="sqftTotal">Total Square Foot</label>
+                <input id="sqftTotal" name="sqftTotal" type="number" required min="1000" max="1000000"
+                  placeholder="Square Foot Total">
+              </div>
+              <div class="mb-3">
+                <label for="homePrice">Listing Price</label>
+                <input id="homePrice" name="price" type="number" required min="1" max="100000000" placeholder="0">
+              </div>
+              <div class="mb-3">
+                <label for="homeImgUrl">House Image URL</label>
+                <input id="homeImgUrl" name="imgUrl" type="url" required maxlength="1000" placeholder="Image URL...">
+              </div>
+              <div class="mb-3">
+                <label for="homeDescription">House Description</label>
+                <input id="homeDescription" name="homeDescription" type="text" required maxlength="300"
+                  placeholder="Provide a short description of your home...">
+              </div>
+              <!-- NOTE you will need a button element inside of your form that we can use to submit the form -->
+              <div class="text-end">
+                <button class="btn btn-outline-primary me-2" type="reset">
+                  Reset Form
+                </button>
+                <button class="btn btn-outline-dark" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1680300960892-6d673da0362f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlJTIwaW4lMjBhJTIwaG91c2V8ZW58MHx8MHx8fDA%3D"
+            alt="people walking in a house" class="img-fluid">
+        </div>
+      </div>
+    </section>
+    <section class="container">
       <div id="housesListings" class="row">
         <!-- STUB houses card template  -->
         <!-- <div class="col-12">
